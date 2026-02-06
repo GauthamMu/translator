@@ -1,0 +1,37 @@
+{
+    "ich": [
+        {
+            "translation": "I"
+        }
+    ],
+    "du": [
+        {
+            "translation": "you"
+        }
+    ],
+    "er": [
+        {
+            "translation": "he"
+        }
+    ],
+    "sie": [
+        {
+            "translation": "she/they"
+        }
+    ],
+    "mag": [
+        {
+            "translation": "like"
+        }
+    ],
+    "apfel": [
+        {
+            "translation": "apple"
+        }
+    ],
+    "äpfel": [
+        {
+            "translation": "apples"
+        }
+    ]
+}

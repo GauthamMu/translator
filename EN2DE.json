@@ -1,0 +1,82 @@
+{
+    "i": [
+        {
+            "translation": "ich",
+            "type": "pronoun",
+            "subtype": "personal",
+            "person": "1 singular"
+        }
+    ],
+    "you": [
+        {
+            "translation": "du",
+            "type": "pronoun",
+            "subtype": "personal",
+            "person": "2 singular"
+        }
+    ],
+    "he": [
+        {
+            "translation": "er",
+            "type": "pronoun",
+            "subtype": "personal",
+            "person": "3 singular"
+        }
+    ],
+    "she": [
+        {
+            "translation": "sie",
+            "type": "pronoun",
+            "subtype": "personal",
+            "person": "3 singular"
+        }
+    ],
+    "like": [
+        {
+            "translation": "mögen",
+            "type": "verb",
+            "context": "infinitive"
+        },
+        {
+            "translation": "mag",
+            "type": "verb",
+            "context": "1 singular"
+        },
+        {
+            "translation": "magst",
+            "type": "verb",
+            "context": "2 singular"
+        }
+    ],
+    "love": [
+        {
+            "translation": "lieben",
+            "type": "verb",
+            "context": "infinitive"
+        },
+        {
+            "translation": "liebe",
+            "type": "verb",
+            "context": "1 singular"
+        },
+        {
+            "translation": "liebst",
+            "type": "verb",
+            "context": "2 singular"
+        }
+    ],
+    "apple": [
+        {
+            "translation": "Apfel",
+            "type": "noun",
+            "subtype": "singular"
+        }
+    ],
+    "apples": [
+        {
+            "translation": "Äpfel",
+            "type": "noun",
+            "subtype": "plural"
+        }
+    ]
+}

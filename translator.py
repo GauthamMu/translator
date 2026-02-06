@@ -11,7 +11,10 @@ def DE2EN(text: str):
     translatedSplitText = []
 
     for word in splitText:
-        translatedSplitText.append(wordList[word]["translation"])
+        try:
+            translatedSplitText.append(wordList[word]["translation"])
+        except KeyError:
+            translatedSplitText.append(f"[{word}]")
 
     translatedText = " ".join(translatedSplitText)
 

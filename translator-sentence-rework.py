@@ -1,5 +1,4 @@
 import json
-import re
 
 def DE2EN(text: str, wordList: dict):
     return
@@ -7,8 +6,17 @@ def DE2EN(text: str, wordList: dict):
 def EN2DE(text: str, wordList: dict):
     return
 
-def split_sentences(input: str) -> list:
-    return # Warning: Hard to implement
+def split_sentences(text: str) -> list:
+    sentences = [["", ""], ]
+
+    for position, character in enumerate(text):
+        if character in ".?!" and (position + 1 == len(text) or text[position+1] == " "):
+            sentences[-1][1] = character
+            sentences.append(["", ""])
+        else:
+            sentences[-1][0] += character
+
+    return sentences
 
 def translator():
     langList = ["en", "de"]

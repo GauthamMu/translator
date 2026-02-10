@@ -18,6 +18,8 @@ def DE2EN(text: str):
 
     translatedText = " ".join(translatedSplitText)
 
+    translatedText = translatedText[0].upper() + translatedText[1:]
+
     print(translatedText)
 
 def EN2DE(text: str):

@@ -6,7 +6,7 @@ def DE2EN(text: str, wordList: dict):
 def EN2DE(text: str, wordList: dict):
     return
 
-def split_sentences(text: str) -> list:
+def split_sentences(text: str) -> list: # Not complete (have to add multiple punctuation support)
     sentences = [["", ""], ]
 
     for position, character in enumerate(text):

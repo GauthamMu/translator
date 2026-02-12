@@ -16,4 +16,4 @@ It's a passion project.
 
 ## Did you use AI?
 
-Yes, but the core functionality is human-made. Only minor parts, such as pulling the JSON files in, or the comments, were partially made by ChatGPT.
+Yes, but the core functionality is human-made. Only minor parts, such as pulling the JSON files in, or the code comments, were partially made by ChatGPT.

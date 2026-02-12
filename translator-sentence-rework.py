@@ -20,6 +20,12 @@ def split_sentences(text: str) -> list: # Not complete (have to add multiple pun
 
     return sentences
 
+def get_JSON(path: str) -> dict:
+    with open(path, "r") as f:
+        wordList = json.load(f)  # <-- This converts JSON string to a dictionary (thx ChatGPT)
+
+    return wordList
+
 def translator():
     # Supported languages
     langList = ["en", "de"]
@@ -46,16 +52,14 @@ def translator():
 
     # Yes, the following code is WET. Deal with it. clarity > cleverness
     if inputLang == "de" and outputLang == "en":
-        with open("DE2EN.json", "r") as f:
-            wordList = json.load(f)  # <-- This converts JSON string to a dictionary (thx ChatGPT)
+        wordList = get_JSON("DE2EN.json")
 
         output = ""
         for sentence in splitInput:
             output += DE2EN(sentence, wordList)
         return output
     elif inputLang == "en" and outputLang == "de":
-        with open("EN2DE.json", "r") as f:
-            wordList = json.load(f)  # <-- This converts JSON string to a dictionary (thx ChatGPT)
+        wordList = get_JSON("EN2DE.json")
 
         output = ""
         for sentence in splitInput:

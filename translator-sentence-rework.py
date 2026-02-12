@@ -19,16 +19,19 @@ def split_sentences(text: str) -> list: # Not complete (have to add multiple pun
     return sentences
 
 def translator():
+    # Supported languages
     langList = ["en", "de"]
 
     inputLang = ""
     outputLang = ""
 
+    # Ask user for input language until valid
     while inputLang not in langList:
         inputLang = input(f"Enter language to translate from ({", ".join(langList)}): ").lower()
 
     newLangList = [lang for lang in langList if lang != inputLang]
 
+    # Determine output language; only prompt if multiple options
     if len(newLangList) == 1:
         outputLang = newLangList[0]
     else:
@@ -39,6 +42,7 @@ def translator():
 
     splitInput = split_sentences(text)
 
+    # Yes, the following code is WET. Deal with it. clarity > cleverness
     if inputLang == "de" and outputLang == "en":
         with open("DE2EN.json", "r") as f:
             wordList = json.load(f)  # <-- This converts JSON string to a dictionary (thx ChatGPT)

@@ -13,7 +13,7 @@ def split_sentences(text: str) -> list: # Not complete (have to add multiple pun
         if character in ".?!" and (position + 1 == len(text) or text[position+1] == " "):
             sentences[-1][0] = sentences[-1][0].strip() # Stripping sentence whitespace
             sentences[-1][1] = character
-            if position + 1 != len(text): # If at end of text
+            if position + 1 != len(text): # If not at end of text
                 sentences.append(["", ""])
         else:
             sentences[-1][0] += character
